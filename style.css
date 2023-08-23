@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap');
+
+* {
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    border: none;outline: none;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(260deg, #00e9ff, #fd0654, #00ffc7, #ff0000);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 23s ease infinite;
+    -moz-animation: AnimationName 23s ease infinite;
+    -o-animation: AnimationName 23s ease infinite;
+    animation: AnimationName 23s ease infinite;
+    min-height: 100vh;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+.wrapper{
+    width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 30px 25px 40px;
+}
+.wrapper :where(textarea , input , select , button) {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-size: 18px;
+}
+.wrapper textarea {
+    height: 270px;
+    resize: none;
+    padding: 8px 13px;
+    border: 1px solid #ccc;
+}
+.wrapper .file-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.file-options .option {
+    width: calc(100% / 2 - 8px);
+}
+.option :where(input , .select-menu) {
+    height: 50px;
+    border: 1px solid #bfbfbf;
+    padding: 0 15px;
+    margin-top: 6px;
+    border-radius: 8px;
+}
+.option .select-menu select {
+    height: 50px;
+    background: none;
+}
+.wrapper .save-btn {
+    margin-top: 20px;
+    padding: 16px 0;
+    cursor: pointer;
+    color: black;
+    pointer-events: none;
+    opacity: 0.6;
+}
+.wrapper textarea:valid ~ .save-btn {
+    opacity: 1;
+    pointer-events: auto;
+    background: linear-gradient(260deg, #00e9ff, #fd0654, #00ffc7, #ff0000);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 23s ease infinite;
+    -moz-animation: AnimationName 23s ease infinite;
+    -o-animation: AnimationName 23s ease infinite;
+    animation: AnimationName 23s ease infinite;
+}
+
+
+
+
+
+
+
+
